@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --tipo-letra: "Nunito", Helvetica, arial, sans-serif;
+    --verde-escuro: #049A40;
+    --verde-claro: #0BF96A;
+    --rosa-escuro: #E100F9;
+    --rosa-claro: #F3A0FD;
+    --branco: #fff;
+    --preto: #000;
+}
+
+body{
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+}
+a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+/*Menu*/
+.menu-bg{
+    background-color: var(--verde-claro);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu_logo{
+    margin: 10px;
+}
+.menu_logo h1{
+    color: #fff;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav .nav_lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav_lista{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav_link{
+    padding: 20px 10px;
+}
+.nav_link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+.intro{
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+hr{
+    border: none;
+    background-color: var(--rosa-escuro);
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
+}
+.sessao_titulo{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/*Corpo*/
+.somos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.somos_corpo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.somos_texto{
+    flex: 6 1 160px;
+}
+.somos_imagem{
+    flex: 1 1 350px;
+}
+
+/*Nossos cursos*/
+
+.curso_corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.curso{
+    width: 280px;
+    margin: 0 20px;
+}
+.curso_titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+/*Planos*/
+
+.planos_corpo{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+.planos{
+    background-color: var(--rosa-claro);
+}
+.plano{
+    width: 290px;
+    margin: 10px;
+    border: 2px solid var(--verde-claro);
+}
+.plano_titulo{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+.plano_preco{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.plano_divisor{
+    background-color: var(--verde-claro);
+    width: 20px;
+    margin: 5px auto;
+}
+.plano-lista{
+    max-width: 195px;
+    margin: 0 auto;
+}
+.plano-lista-item{
+    margin: 10px 0;
+    font-style: italic;
+}
+.plano-lista-item::before{
+    content: "";
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: var(--verde-claro);
+    border-radius: 5px;
+    margin-left: -15px;
+}
+.plano_btn-comprar{
+    display: block;
+    max-width: 180px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid var(--verde-claro);
+}
+.plano:last-child{
+    background-color: var(--verde-claro);
+}
+
+/*Vantagens*/
+
+.vantagens{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vantagem{
+    max-width: 240px;
+    margin: 10px;
+}
+.vantagem_titulo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.vantagem_titulo::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.vantagem:nth-of-type(3n+1) .vantagem_titulo::before{
+    background-color: var(--verde-claro);
+}
+.vantagem:nth-of-type(3n+2).vantagem_titulo::before{
+    background-color: var(--rosa-escuro);
+}
+.vantagem:nth-of-type(3n+3).vantagem_titulo::before{
+    background-color: var(--verde-escuro);
+}
+
+/*Newsletter*/
+
+.newsletter{
+    background-color: var(--verde-claro);
+}
+.newsletter-conteiner{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newsletter-info{
+    padding-left: 10px;
+    flex: 1 1 260px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.newsletter-form{
+    flex: 2 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newsletter-info_titulo{
+    font-size: 2.62rem;
+    font-weight: bold;
+}
+.newsletter-info_descricao{
+    font-style: italic;
+}
+.newsletter-form_input{
+    flex: 3 1 260px;
+    font-size: 1.5rem;
+    width: 325px;
+    color: #000;
+    font-style: italic;
+    font-family: var(--tipo-letra);
+    border: 10px solid var(--rosa-escuro);
+    padding: 10px;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.newsletter-form_submit{
+    width: 192px;
+    font-family: var(--tipo-letra);
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--rosa-escuro);
+    color: #000;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: var(--rosa-claro);
+    display: flex;
+    justify-content: space-around;
+    padding: 55px calc((100% - 960px)/2);
+}
+.footer_copyright, .footer_logo{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .icon{
+        display: block;
+    }
+    .newsletter-form_input{
+        width: 100%;
+    }
+    .newsletter-form_submit{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 905px){
+    .newsletter-form_input{
+        width: 100%;
+    }
+    .newsletter-form_submit{
+        width: 100%;
+    }
+}
